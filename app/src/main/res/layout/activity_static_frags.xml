@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task5.StaticFrags">
+
+    <fragment
+        android:id="@+id/frag_1"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <fragment
+        android:id="@+id/frag_2"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <fragment
+        android:id="@+id/frag_3"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_1"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <fragment
+        android:id="@+id/frag_4"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_2"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <fragment
+        android:id="@+id/frag_5"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_3"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <fragment
+        android:id="@+id/frag_6"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_4"
+        android:name="com.example.myapplication.task5.Imageviewfrag"
+        tools:layout="@layout/imageview_frag"></fragment>
+
+    <Button
+        android:id="@+id/dwn_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:onClick="Dwnimg"
+        android:text="Download Images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

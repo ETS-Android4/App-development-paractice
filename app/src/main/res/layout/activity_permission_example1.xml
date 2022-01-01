@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionExamples.Permission_Example1">
+
+    <Button
+        android:id="@+id/btnpermision"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/request_permission"
+        android:onClick="Requestpermisssion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="304dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/check_permission"
+        android:onClick="Checkpermission"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpermision"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:onClick="Read_Contacts"
+        android:text="@string/read_contacts"
+        app:layout_constraintBottom_toTopOf="@+id/btnpermision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filehandling_Example.fileHandling_MainActivity">
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="203dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="128dp"
+        android:onClick="SaveData"
+        android:text="Save File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:onClick="ShowData"
+        android:text="Show File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+    <TextView
+        android:id="@+id/txt_filedata"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="396dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Enter Data"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="43dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

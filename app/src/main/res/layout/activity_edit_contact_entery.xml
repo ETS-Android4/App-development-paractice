@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteExample.EditContactEntery">
+    <EditText
+        android:id="@+id/editfirstname"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="78dp"
+        android:ems="10"
+        android:hint="@string/firstname"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/editsecondname"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editfirstname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="73dp"
+        android:ems="10"
+        android:hint="@string/secondname"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/editphonenumber"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editsecondname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="number|textPersonName"/>
+
+    <EditText
+        android:id="@+id/editemailaddress"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editphonenumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="81dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textWebEmailAddress|textPersonName|textEmailSubject"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edithomeaddress"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editemailaddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:hint="@string/home_address"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="117dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/edithomeaddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="104dp"
+        android:onClick="UpdateData"
+        android:layout_marginBottom="16dp"
+        android:text="@string/update" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="135dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/edithomeaddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="DeleteData"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/button9"
+        android:text="@string/deletefromdb" />
+</RelativeLayout>
